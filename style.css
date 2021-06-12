@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    scroll-behavior: smooth;
+    align-items: center;
+}
+section{
+    padding: 80px;
+    max-width: 1337px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+#home{
+    padding: 0;
+}
+header{
+            display: flex;
+            justify-content: space-between;
+            position:static;
+            top: 0;
+            left: 0;
+            width: 100%;
+            align-items: center;
+            z-index: 2;
+            transition: 0.8s;
+            /* background-color:  #111;; */
+            height: 150px;
+            margin-bottom: 10PX;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1337px;
+            border: 1px solid rgba(0,0,0,1);
+
+}
+header .logo{
+    display: block;
+    margin-left: 50px;
+}
+header .logo img{
+    width: 150px;
+    height: 150px;
+}
+header ul{
+    display: flex;
+   position: relative;
+   margin-right: 30px;
+    
+}
+header ul li{
+list-style-type: none;
+position: relative;
+}
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+ 
+}
+header ul li a:hover{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    text-decoration: none;
+    background-color:green;
+    padding: 10px;
+    transform: scale(1.02);
+    color: white;
+    border: 2px solid #111;
+ 
+}
+/* .customer_carousel .customer,
+.carousel .carousel_item--hidden{
+display: none;
+}
+.customer_carousel .carousel_item--visible{
+    display: block;
+    animation: fadeVisibility 0.5s;
+ 
+} */
+
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+.heading p{
+    font-style: italic;
+    font-size: 14px;
+}
+.heading h2{
+    font-size: 3em;
+    color: #009e66;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.services .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.services .content .serviceBx{
+    margin: 10px 15px;
+    padding: 30px 15px;
+    text-align: center;
+    max-width: 360px;
+    background-color: blue;
+    color: wheat;
+    cursor: pointer;
+    height: 250px;
+    width: 500px;
+}
+.services .content .serviceBx:hover{
+    background-color: green;
+    transition: 0.5s;
+    box-shadow: 0 5px 20px rgba(0,0,0,1);
+    transform: scale(1.00); 
+}
+#review{
+    background-color: #161616;
+}
+.customer_carousel{
+    background-color: black;
+}
+.customer_carousel .customer{
+   text-align: center;
+   background-color: #111;
+   width: 300px;
+   height: 380px;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 50px;
+   position: relative;
+   bottom: 10px;
+   top: 5px;
+}
+.customer_carousel .customer:hover{
+    box-shadow: 0 10px 20px rgba(18, 73, 173, 0.664);
+}
+.customer_carousel .customer img{
+    margin-top: 20px;
+    width: 100px;
+    border-radius: 60px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.customer_carousel .customer .customer_text h3{
+  color: #009e66;
+   font-size: 30px;
+}
+.customer_carousel .customer .customer_text p{
+    font-size: 15px;
+    line-break: auto;
+    word-spacing: 1px;
+    padding: 20px;
+   color: white;
+   background-color: blue;
+   margin-bottom: auto;
+   margin-top: 20px;
+   border-radius: 60px;
+}
+.contact{
+    background-color:#111;
+}
+.formBx{
+    min-width: 60%;
+    margin-bottom: auto;
+}
+.formBx form{
+    display: flex;
+    flex-direction:column;
+}
+.formBx form h3,
+.contactInfo h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-right: auto;
+}
+.formBx form input,
+.formBx form textarea{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    background-color: #161616;
+    border: none;
+    outline: none;
+    resize: vertical;
+    width: 100%;
+    margin-right: auto;
+}
+.formBx form input:focus,
+.formBx form textarea:focus{
+    border-bottom: 1px solid #009e66;
+    transition: .5s;
+}
+.formBx form input::placeholder,
+.formBx form textarea::placeholder{
+color: #999;
+}
+.formBx form input[type="submit"]{
+    background-color: #009e66;
+    max-width: 250px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.contactInfo{
+    min-width: 40%;
+
+}
+.contactInfo p{
+    color: #999;
+    padding: 4px;
+}
+.contactInfoBx{
+    position: relative;
+}
+.contactInfoBx .box{
+    position:relative;
+    display: flex;
+    padding: 20px 0px ;
+
+}
+.contactInfoBx .box .icon{
+    color:#fff;
+    display: flex;
+    min-width: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px;
+    margin-bottom: auto;
+}
+.contactInfoBx .box .txt{
+    color: #999;
+    margin-left: 16px;
+    flex-direction: column;
+    font-weight: 300PX;
+
+}
+.contactInfoBx .box .txt h3{
+    color: #009e66;
+    font-weight: 300;
+}
+.contactInfoBx .boxSocial{
+    display: flex;
+    flex-direction: row;
+    padding-left: 60px;
+    letter-spacing: 15px;
+}
+.contactInfoBx .boxSocial .fa{
+   font-size: 42px;
+   color: #009e66;
+   cursor: pointer;
+}
+.contact .heading p{
+    color: white;
+    margin-bottom: 30px;
+}
+/* section bottom */
+.links{
+    background-color: #111; 
+    border: 2px solid white; 
+}
+.links li{
+    list-style-type: none;
+}
+.links li a{
+    color: #009e66;
+    text-decoration: none;
+}
+.links h2{
+    color: white;
+    font-size: 18px;
+}
+
+.links .boxSocial .icons{
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.links .boxSocial .fa{
+    color: #009e66;
+}
+.owl-carousel.plans{
+    width: 200px;
+    height: 100px;
+}
+.silver_plan{
+    background-color:silver;
+    padding: 20px;
+    border: 2px solid black;
+}
+.golden_plan{
+    background-color: gold;
+    padding: 20px;
+    border: 2px solid black;
+}
+.platinum_plan{
+    background-color: blue;
+    padding: 20px;
+    border: 2px solid black;
+}
+.diamond_plan{
+    background-color: skyblue;
+    padding: 20px;
+    border: 2px solid black;
+}
+.silver_plan:hover{
+    background-color:silver;
+    padding: 20px;
+    border: 2px solid black;
+    box-shadow: 0 5px 20px rgba(0,0,0,1) ;
+    transform: scale(1.1);
+}
+.golden_plan:hover{
+    background-color: gold;
+    padding: 20px;
+    border: 2px solid brown;
+    box-shadow: 0 5px 20px rgba(0,0,0,1) ;
+    transform: scale(1.1);
+}
+.platinum_plan:hover{
+    background-color: blue;
+    padding: 20px;
+    border: 2px solid black;
+    box-shadow: 0 5px 20px rgba(0,0,0,1) ;
+    transform: scale(1.1);
+}
+.diamond_plan:hover{
+    background-color: skyblue;
+    padding: 20px;
+    border: 2px solid black;
+    box-shadow: 0 5px 20px rgba(0,0,0,1) ;
+    transform: scale(1.1);
+}
+.business .text_plan{
+    color: white;
+    background-color: #111;
+    padding: 5px;
+    cursor: pointer;
+}
+.business .price{
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color:white;
+  
+}
+.business .buy{
+ background-color: #009e66;
+ padding: 10px;
+
+}
+.developers{
+  padding-bottom: 40px;
+  padding-top: 0;
+}
+.owl-carousel.developers_carousel{
+    background-color: #111;
+    padding: 50px;
+}
+.owl-carousel.developers_carousel .item{
+    height: 400px;
+    width: 300px;
+    background-color: black;
+
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    max-width: 1337px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* just for testing purpose */
+#open{
+    color:white ;
+    background-color: red; 
+    cursor: pointer;
+}
+/* 0 0 0 0.3 */
+.module_container {
+ 
+     background-color: rgba(0,0,0,0.3);
+     display: flex;
+     justify-content: center;
+     position: fixed;
+    overflow-x: hidden;
+     align-items: center;
+     align-content: center;
+     top: 0;
+     left: 0;
+     width: 100vw;
+     height: 100vh;
+     opacity: 0;
+     pointer-events: none;
+     flex-direction: column;
+     color: blue;
+}
+.close{
+   
+    margin-bottom: 10px;
+    text-align: end;
+}
+.close_btn{
+    padding:8px 8px 8px 10px;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.project_module{
+    background-color: blue;
+}
+.module{
+    width: 600px;
+    text-align: center;  
+    padding: 20px;
+}
+.module_container.show{
+    pointer-events: auto;
+    opacity: 5;
+     
+}
+.owl-carousel.hide{
+    opacity:0;
+}
+.project_text{
+    display: block;
+    width: 600px;
+    text-align: center;
+    background-color: teal;
+}
+.project_details p{
+    color: white;
+    text-align: center;
+}
+.buy{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+.buy button{
+    width: 100px;
+    height: 40px;
+    margin-bottom: 10px;
+    background-color: #009e66;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.buy button:hover{
+    width: 100px;
+    height: 40px;
+    margin-bottom: 10px;
+    background-color: black;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    transform: scale(1.08);
+    box-shadow: 0 5px 20px red ;
+}
+.owl-carousel.developers_carousel{
+    background-color: grey;
+}
+.developers .developer_block{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+.partners,.developers{
+    margin-bottom: 30px;
+    padding: 0;
+}
+.partners .partners_carousel{
+   background-color:#111;
+   text-align: center;
+   margin-top: 20px;
+}
+.partners .partners_carousel .item{
+    width: 340px;
+    height: 200px;
+    padding: 20px;
+    margin: 50px;
+    background-color: #111;
+    align-items: center;
+}
+.partners .partners_carousel .item img{
+    width: 300px;
+    height: 160px;
+}
+.fa-times-circle-o{
+    color: red;
+}
+.serviceBx .buy.services{
+    margin-top: 0px;
+}

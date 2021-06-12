@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+     <title>Owl</title>
+
+</head>
+<body>
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="images/carousel1.png"   style="width: 1337px; height: 500px;"  alt="">
+        </div>
+        <div class="item">
+            <img src="images/carousel2.jpeg" style="width: 1337px; height: 500px;"  alt="">
+        </div>
+        <div class="item">
+            <img src="images/carousel3.png"  style="width: 1337px;  ;" alt="">
+        </div>
+        <div class="item">
+            <img src="images/carousel4.png" style="width: 1337px; ;"  alt="">
+        </div>
+        </div>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+ <script>
+ var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:1,
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+ </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- <div class="carousel_here">
+    <div class="carousel">
+        <div class="carousel_item carousel_item--visible">
+            <img src="images/carousel1.png"   alt="">
+            <div class="text">
+                <h2>Hire Developer</h2>
+                <p>Hire Best Developer From Us </p>
+            </div>
+        </div>
+        <div class="carousel_item">
+            <img src="images/carousel2.jpeg"   alt="">
+        </div>
+        <div class="carousel_item">
+            <img src="images/carousel3.png"  alt="">
+            <div class="text">
+                Hello here is website
+            </div>
+        </div>
+        <div class="carousel_item">
+            <img src="images/carousel4.png"  alt="">
+            <div class="text">
+                Hello here is website
+            </div>
+        </div>
+        <div class="carousel_actions">
+            <button id="carousel_button_prev" aria-label="Previous slide">
+                <
+            </button>
+            <button id="carousel_button_next" aria-label="Next slide">
+                >
+            </button>
+        </div>
+    </div>
+</div> -->
+<!-- var slideIndex = 0;
+var buttonsClicked=false;
+if(buttonsClicked==false)
+{
+  showSlides();
+}
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("carousel_item");
+  for (let slide of slides) {
+    slide.classList.remove('carousel_item--visible');
+     slide.classList.remove('carousel_item--hidden');
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].classList.add('carousel_item--visible')
+ if(buttonsClicked==false)
+ {
+  setTimeout(showSlides, 3000);
+ };   
+};
+////Slider buttons ////
+let slidePosition=0;
+const slides=document.getElementsByClassName('carousel_item')
+const totalSlides=slides.length;
+document.getElementById('carousel_button_next')
+.addEventListener("click",function(){
+moveToNextSlide();
+buttonsClicked=true;
+}); 
+document.getElementById('carousel_button_prev')
+.addEventListener("click",function(){
+moveToPrevSlide();
+buttonsClicked=true;
+}); 
+function updateSlidePosition(){
+for(let slide of slides){
+slide.classList.remove('carousel_item--visible');
+slide.classList.remove('carousel_item--hidden');
+}
+slides[slidePosition].classList.add('carousel_item--visible');
+
+};
+function moveToNextSlide(){
+  
+ if(slidePosition===totalSlides-1){
+   slidePosition=0;  
+ }
+ else{
+     slidePosition++;
+ }
+ updateSlidePosition()
+};
+function moveToPrevSlide(){
+    
+  if(slidePosition===0)
+  {
+      slidePosition=totalSlides-1;
+  }
+  else{
+      slidePosition--;
+  }
+  updateSlidePosition()
+}; --> 
+
+
+
+
+
+<!-- /* .carousel .carousel_actions{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+}
+.carousel  .carousel_actions button{
+    border-radius: 50px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+.carousel  .carousel_actions button#carousel_button_prev{
+margin-left: 20px;
+}
+.carousel  .carousel_actions button#carousel_button_prev{
+margin-right: 20px;
+}
+
+@keyframes fadeVisibility{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: opacity linear;
+    }
+} */ -->
+
+
+<!-- /* .carousel .carousel_item img{
+
+    width: 1350px;
+    height: 500px;
+} */
+/* .carousel .carousel_item .text{
+    color: #111;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    top: 50%;
+    left: 10%;
+} */
+
+/* .carousel .carousel_item--visible, */ -->
+
+
+
+<!-- /* .carousel{
+    overflow: hidden;
+    position: relative;
+    color: #000;
+   transition-delay: 2s;
+   text-align: center;
+} */
+/* .carousel .carousel_item, */ -->
